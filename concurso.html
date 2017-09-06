@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="recetas,cocina">
+        <meta name="description" content="Las mejores recetas al alcance de tu mano, en esta página podras encontrar desde recetas faciles y economicas hasta las platos mas complejos.">
+        <meta name="author" content="Diego Garcia">
+        <!--Titulo de la pagina-->
+        <title>El Gourmet - Las Mejores Recetas</title>
+        <link rel="shortcut icon" href="img/LogoGourmet.png">
+        <!--Estilo de la pagina-->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header><img class="logo" src="img/LogoGourmet.png" alt="logo" title="logo"><h1>El Gourmet - Tu Portal de Recetas</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Recetas">Recetas</a></li>
+                <li><a href="#recomendaciones" title="Recomendaciones">Recomendaciones</a></li>
+                <li><a href="#tips" title="Tips">Tips</a></li>
+                <li><a href="concurso.html" title="Concurso">Concurso</a></li>
+            </ul>
+        </nav>
+        <!--Main Section of the page, excludes menu, header, footer, etc-->
+        <main>
+            <h2>Formulario de inscripción a Concurso</h2>
+            <h3>Inscríbete para el primer concurso de videos de cocina del Uruguay.</h3>
+            <p>Todos los campos son obligatorios.</p>
+            <form>
+                <fieldset>
+                    <legend>Datos</legend>
+                    <label for="firstName" title="Nombre">Nombre</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Juan" required="required">
+                    <label for="lastName" title="Apellido">Apellido</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Quintana" required="required">
+                    <label for="address" title="Dirección">Dirección</label>
+                    <input type="text" id="address" name="address" placeholder="Cochabamba 1614" required="required">
+                    <label for="telephone" title="Teléfono">Teléfono</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="221562351" required="required">
+                    <label for="email" title="Email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="juan.quintana@email.com" required="required">
+                    <label for="male" class="inline" title="Hombre">Hombre</label>
+                    <input type="radio" id="male" name="sex" required="required" checked="checked">
+                    <label for="female" class="inline" title="Mujer">Mujer</label>
+                    <input type="radio" id="female" name="sex" required="required">
+                    <label for="difficulty" title="Dificultad de la Receta">Dificultad de la Receta</label>
+                    <input type="range" min="1" max="5" id="difficulty" name="difficulty">
+                    <label for="dish" title="Opciones de plato a preparar">Opciones de plato a preparar</label>
+                    <select id="dish" name="dish">
+                        <option value="1">Pollo Asado</option>
+                        <option value="2">Pasta</option>
+                        <option value="3">Fideos Adria Vencidos solo con aceite</option>
+                        <option value="4">Arroz con "atún"</option>
+                        <option value="5">Lasagna</option>
+                    </select>
+                    <label for="preparation" title="Resumen de la Preparación">Resumen de la Preparación</label>
+                    <textarea id="preparation"></textarea>
+                    <label for="terms" class="inline" title="Acepta las condiciones establecidas en el concurso">Acepta las condiciones establecidas en el concurso</label>
+                    <input type="checkbox" id="terms" class="inline" name="terms" required="required">
+                    <p>* "Constituyo el domicilio electrónico que registro en este formulario. Además autorizo al servicio a realizar las comunicaciones y notificaciones personales de los actos indicados en el cap. III del Instructivo de Notificaciones Personales electrónicas al domicilio electrónico constituido. Me obligo a comunicar, en la oficina donde fue constituido este dato, cualquier dato en el domicilio electrónico que denuncio en el presente formulario. Asimismo asumo la responsabilidad respecto al uso exclusivamente personal e intransferible de la cuenta de correo electrónico constituida como domicilio electrónico".</p>
+                    <br>
+                    <input class="button inline" type="submit" value="Enviar">
+                    <input class="button inline" type="reset" value="Borrar">
+                </fieldset>
+            </form>
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18506.135633880564!2d-56.16038295672195!3d-34.92016174745834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suy!4v1502634274819" allowfullscreen></iframe>
+            </div>
+            
+        </main>
+        <!--Pie de página-->
+        <footer>
+            <ul class="inline leftAlign">
+                <li class="inline"><a href="http:\\www.facebook.com" title="Facebook"><img src="img/facebook.png" alt="Facebook" class="mediaIcons"></a></li>
+                <li class="inline"><a href="http:\\www.twitter.com" title="Twitter"><img src="img/twitter.png" alt="Twitter" class="mediaIcons"></a></li>
+                <li class="inline"><a href="http:\\www.instagram.com" title="Instagram"><img src="img/instagram.png" alt="Instagram" class="mediaIcons"></a></li>
+                <li class="inline"><a href="http:\\www.YouTube.com" title="Youtube"><img src="img/youtube.png" alt="Youtube" class="mediaIcons"></a></li>
+                <li class="inline"><a href="#" title="RSS"><img src="img/rss.png" alt="RSS" class="mediaIcons"></a></li>
+            </ul>
+            <ul class="inline rightAlign">
+                <li>© 2010-2017 elgourmet®</li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Anúnciate</a></li>
+                <li><a href="#">SiteMap</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
